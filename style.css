@@ -1,0 +1,6 @@
+.header{
+    background-blend-mode: #4CAF50, red, orange; /* Green */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
