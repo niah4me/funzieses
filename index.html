@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funzieses</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global News | FBI Spotlight</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Funzieses</h1>
-        <p>Your one-stop destination for fun and games!</p>
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="mb-0">Global News</h1>
+      <span class="badge bg-warning text-dark">FBI SPOTLIGHT</span>
     </div>
-    <h1>Welcome to Funzieses!</h1>
-   
-</body>
-</html>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">FBI World</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero text-center text-white d-flex align-items-center" style="background-image: url('https://source.unsplash.com/1600x600/?fbi,usa'); height: 400px;">
+    <div class="container">
+      <h2 class="display-4">FBI: Protecting the Nation</h2>
+      <p class="lead">Explore the mission, values, and latest operations of the Federal Bureau of Investigation.</p>
+      <a href="#news" class="btn btn-primary mt-3">Explore Stories</a>
+    </div>
+  </section>
+
+  <section class="breaking-news bg-danger text-white py-2">
+    <marquee behavior="scroll" direction="left">🚨 BREAKING: FBI cracks international cybercrime ring • New recruitment drive opens for cybersecurity agents • Director addresses press on global intelligence efforts 🚨</marquee>
+  </section>
+
+  <main class="container my-5" id="news">
+    <h3 class="mb-4">Latest FBI News</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x200/?cyber,security" class="card-img-top" alt="Cyber">
+          <div class="card-body">
+            <h5 class="card-title">Cyber Unit Dismantles Global Threat</h5>
+            <p class="card-text">The FBI's elite cyber division coordinated with Europol to bring down a major ransomware group.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x200/?law,enforcement" class="card-img-top" alt="Law enforcement">
+          <div class="card-body">
+            <h5 class="card-title">FBI Launches New Training Academy</h5>
+            <p class="card-text">A modern facility opens in Quantico, emphasizing AI, ethics, and global operations.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x200/?justice,flag" class="card-img-top" alt="Justice">
+          <div class="card-body">
+            <h5 class="card-title">Director's Address: Global Security</h5>
+            <p class="card-text">FBI Director speaks at the United Nations on coordinated action against international terrorism.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
